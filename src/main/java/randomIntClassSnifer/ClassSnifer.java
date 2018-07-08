@@ -104,13 +104,13 @@ public class ClassSnifer {
 
                 }
 
-            }else if(field.getType().getInterfaces().equals(Integer.class)){
+            }else if(field.getType().equals(Integer.class)){
                 result += "[ "+ field.get(object)  + " ]";
-            }else if(field.getType().getInterfaces().equals(Double.class)){
+            }else if(field.getType().equals(Double.class)){
                 result += "[ "+ field.get(object)  + " ]";
             }else{
                 result += "[ "+ field.get(object).toString() + " ]";
-            }
+           }
 
             result += "; ";
         }
